@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Reset defaults */
+/* ===================== RESET & BASICS ===================== */
 html, body {
   margin: 0;
   padding: 0;
@@ -8,20 +8,19 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color: #fff;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow-x: hidden; /* Stop horizontal scroll */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* Body layout setup */
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden; /* Stop horizontal scroll */
+  overflow-x: hidden;
 }
 
-/* Stars background effect */
+/* ===================== BACKGROUND STARS ===================== */
 body::before {
   content: '';
   position: fixed;
@@ -39,7 +38,7 @@ body::before {
   100% { transform: translateY(-1000px); }
 }
 
-/* Main container styles */
+/* ===================== MAIN CONTAINER ===================== */
 .container {
   display: flex;
   flex-direction: column;
@@ -51,31 +50,26 @@ body::before {
   box-sizing: border-box;
 }
 
-/* Initials Circle Styling */
+/* ===================== INITIALS CIRCLE ===================== */
 .initials-circle {
-  width: 120px; /* Same size as the original avatar */
-  height: 120px; /* Same size as the original avatar */
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  background-color: #e0e0e0; /* Light grey background */
+  background-color: #e0e0e0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px; /* Same margin as the original avatar */
+  margin-bottom: 20px;
 }
 
 .initials-text {
-  font-size: 60px; /* Adjust as needed for the size */
+  font-size: 60px;
   font-weight: bold;
-  color: #333; /* Dark grey color for the initials */
-  font-family: sans-serif; /* Or a font of your choice */
+  color: #333;
+  font-family: sans-serif;
 }
 
-/* Avatar styling */
-.avatar {
-  display: none; /* Hide the avatar element */
-}
-
-/* Headings */
+/* ===================== HEADINGS ===================== */
 h1 {
   margin: 10px 0;
   font-size: 1.8em;
@@ -87,7 +81,7 @@ p {
   font-size: 1em;
 }
 
-/* Link buttons */
+/* ===================== LINK BUTTONS ===================== */
 .link-button {
   display: flex;
   align-items: center;
@@ -109,7 +103,21 @@ p {
   transform: translateY(-3px);
 }
 
-/* ===================== FOOTER SECTION START ===================== */
+/* ===================== FOOTER SECTION ===================== */
+
+/* Shared Footer Styles */
+.footer-desktop,
+.footer-mobile {
+  text-align: center;
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Common paragraph styles for both footers */
+.footer-desktop p,
+.footer-mobile p {
+  margin: 0;
+}
 
 /* Desktop Footer Styling */
 .footer-desktop {
@@ -117,15 +125,8 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 20px 10px;
-  font-size: 0.8em;
-  color: #888;
-  gap: 10px; /* Space between footer texts */
-}
-
-.footer-desktop p {
-  margin: 0;
+  gap: 10px; /* Space between p tags */
 }
 
 .footer-desktop a {
@@ -140,34 +141,27 @@ p {
 
 /* Mobile Footer Styling */
 .footer-mobile {
-  display: none;
+  display: none; /* hidden by default */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 15px 10px;
-  font-size: 0.8em;
-  color: #888;
+  gap: 5px; /* Space between lines on mobile */
 }
 
-.footer-mobile p {
-  margin: 4px 0;
-}
-
-/* ===================== FOOTER SECTION END ===================== */
-
-/* Responsive tweaks */
+/* ===================== RESPONSIVE SECTION ===================== */
 @media screen and (max-width: 600px) {
+  /* Link buttons scale on mobile */
   .link-button {
     width: 90%;
   }
 
-  /* Hide desktop footer on mobile */
+  /* Hide desktop footer */
   .footer-desktop {
     display: none;
   }
 
-  /* Show mobile footer on mobile */
+  /* Show mobile footer */
   .footer-mobile {
     display: flex;
   }
