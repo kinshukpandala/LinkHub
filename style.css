@@ -72,7 +72,6 @@ body::before {
 
 /* Avatar styling */
 .avatar {
-  /* Removed avatar styles */
   display: none; /* Hide the avatar element */
 }
 
@@ -110,10 +109,12 @@ p {
   transform: translateY(-3px);
 }
 
-/* Footer styling */
-footer {
+/* ===================== FOOTER SECTION START ===================== */
+
+/* Desktop Footer Styling */
+.footer-desktop {
   display: flex;
-  flex-direction: row; /* Default layout for desktop */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -123,19 +124,37 @@ footer {
   gap: 10px; /* Space between footer texts */
 }
 
-footer p {
+.footer-desktop p {
   margin: 0;
 }
 
-footer a {
+.footer-desktop a {
   color: #fff;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
 
-footer a:hover {
-  color: #ff4081; /* Accent color on hover */
+.footer-desktop a:hover {
+  color: #ff4081;
 }
+
+/* Mobile Footer Styling */
+.footer-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.8em;
+  color: #888;
+}
+
+.footer-mobile p {
+  margin: 4px 0;
+}
+
+/* ===================== FOOTER SECTION END ===================== */
 
 /* Responsive tweaks */
 @media screen and (max-width: 600px) {
@@ -143,8 +162,13 @@ footer a:hover {
     width: 90%;
   }
 
-  footer {
-    flex-direction: column; /* Stack footer content vertically on mobile */
-    gap: 5px; /* Less space between lines */
+  /* Hide desktop footer on mobile */
+  .footer-desktop {
+    display: none;
+  }
+
+  /* Show mobile footer on mobile */
+  .footer-mobile {
+    display: flex;
   }
 }
