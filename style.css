@@ -1,106 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* ===================== RESET & BASICS ===================== */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  overflow-x: hidden; /* Prevent horizontal scroll */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
 }
 
 /* ===================== BACKGROUND STARS ===================== */
 body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent url('https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/img/stars.png') repeat top center;
-  animation: moveStars 60s linear infinite;
-  z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent
+        url('https://raw.githubusercontent.com/VincentGarreau/particles.js/master/demo/img/stars.png')
+        repeat top center;
+    animation: moveStars 60s linear infinite;
+    z-index: -1;
 }
 
 @keyframes moveStars {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-1000px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-1000px);
+    }
 }
 
 /* ===================== MAIN CONTAINER ===================== */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-grow: 1;
-  padding: 40px 20px 0;
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1; /* Changed from flex: 1 */
+    padding: 40px 20px 0;
+    box-sizing: border-box;
 }
 
 /* ===================== INITIALS CIRCLE ===================== */
 .initials-circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background-color: #e0e0e0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .initials-text {
-  font-size: 60px;
-  font-weight: bold;
-  color: #333;
-  font-family: sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #333;
+    font-family: sans-serif;
 }
 
 /* ===================== HEADINGS ===================== */
 h1 {
-  margin: 10px 0;
-  font-size: 1.8em;
+    margin: 10px 0;
+    font-size: 1.8em;
 }
 
 p {
-  margin: 5px 0 30px;
-  color: #aaa;
-  font-size: 1em;
+    margin: 5px 0 30px;
+    color: #aaa;
+    font-size: 1em;
 }
 
 /* ===================== LINK BUTTONS ===================== */
 .link-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  padding: 12px 20px;
-  margin: 10px 0;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #fff;
-  border-radius: 25px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    padding: 12px 20px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 
 .link-button:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
 }
 
 /* ===================== FOOTER SECTION ===================== */
@@ -108,61 +115,61 @@ p {
 /* Shared Footer Styles */
 .footer-desktop,
 .footer-mobile {
-  text-align: center;
-  font-size: 0.8em;
-  color: #888;
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
 }
 
 /* Common paragraph styles for both footers */
 .footer-desktop p,
 .footer-mobile p {
-  margin: 0;
+    margin: 0;
 }
 
 /* Desktop Footer Styling */
 .footer-desktop {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 10px;
-  gap: 10px; /* Space between p tags */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 10px; /* Space between p tags */
 }
 
 .footer-desktop a {
-  color: #fff;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
 .footer-desktop a:hover {
-  color: #ff4081;
+    color: #ff4081;
 }
 
 /* Mobile Footer Styling */
 .footer-mobile {
-  display: none; /* hidden by default */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 10px;
-  gap: 5px; /* Space between lines on mobile */
+    display: none; /* hidden by default */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 5px; /* Space between lines on mobile */
 }
 
 /* ===================== RESPONSIVE SECTION ===================== */
 @media screen and (max-width: 600px) {
-  /* Link buttons scale on mobile */
-  .link-button {
-    width: 90%;
-  }
+    /* Link buttons scale on mobile */
+    .link-button {
+        width: 90%;
+    }
 
-  /* Hide desktop footer */
-  .footer-desktop {
-    display: none;
-  }
+    /* Hide desktop footer */
+    .footer-desktop {
+        display: none;
+    }
 
-  /* Show mobile footer */
-  .footer-mobile {
-    display: flex;
-  }
+    /* Show mobile footer */
+    .footer-mobile {
+        display: flex;
+    }
 }
