@@ -51,14 +51,29 @@ body::before {
   box-sizing: border-box;
 }
 
+/* Initials Circle Styling */
+.initials-circle {
+  width: 120px; /* Same size as the original avatar */
+  height: 120px; /* Same size as the original avatar */
+  border-radius: 50%;
+  background-color: #e0e0e0; /* Light grey background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Same margin as the original avatar */
+}
+
+.initials-text {
+  font-size: 60px; /* Adjust as needed for the size */
+  font-weight: bold;
+  color: #333; /* Dark grey color for the initials */
+  font-family: sans-serif; /* Or a font of your choice */
+}
+
 /* Avatar styling */
 .avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  object-fit: cover;
-  margin-bottom: 20px;
+  /* Removed avatar styles */
+  display: none; /* Hide the avatar element */
 }
 
 /* Headings */
