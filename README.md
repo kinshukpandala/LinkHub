@@ -1,7 +1,7 @@
 # LinkHub 🚀  
+
 **A Personal LinkTree Replica – But Better!**
 
----
 
 ## 📌 About  
 **LinkHub** is my custom-built alternative to Linktree. After Linktree introduced some changes that affected the user experience when people clicked on my links (see the screenshot below), I decided to take control and build my own version—cleaner, faster, and entirely *mine*.
@@ -13,8 +13,7 @@
 ## 🛠️ What I've Built  
 The current version of **LinkHub** is live and functional! Here's a sneak peek of how it looks right now:
 
-![LinkHub Screenshot](https://github.com/user-attachments/assets/09787796-bcb8-4c32-9c15-d18d7da8b494) 
-![image](https://github.com/user-attachments/assets/9d3bd544-7156-4dbe-8307-fc113ac03864)
+![LinkHub Screenshot](https://github.com/user-attachments/assets/09787796-bcb8-4c32-9c15-d18d7da8b494)
 
 
 I'm pretty excited about how it's coming together, but this is just the beginning. More improvements are on the way!
