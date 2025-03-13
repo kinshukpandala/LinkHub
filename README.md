@@ -13,7 +13,9 @@
 ## 🛠️ What I've Built  
 The current version of **LinkHub** is live and functional! Here's a sneak peek of how it looks right now:
 
-![LinkHub Screenshot](https://github.com/user-attachments/assets/09787796-bcb8-4c32-9c15-d18d7da8b494)
+![LinkHub Screenshot](https://github.com/user-attachments/assets/09787796-bcb8-4c32-9c15-d18d7da8b494) 
+![image](https://github.com/user-attachments/assets/9d3bd544-7156-4dbe-8307-fc113ac03864)
+
 
 I'm pretty excited about how it's coming together, but this is just the beginning. More improvements are on the way!
 
@@ -21,7 +23,7 @@ I'm pretty excited about how it's coming together, but this is just the beginnin
 
 ## 🔮 What's Next  
 I'm planning to:
-- Add more customization options (themes, colors)
+- Make a few more changes like add an image or a moto or something simple
 - Optimize for mobile even more
 - Add analytics to track link clicks
 - Maybe even turn it into a simple template others can use!
