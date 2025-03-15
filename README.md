@@ -33,8 +33,8 @@ I'm planning to:
 ---
 
 ## 🗓️ Project Timeline  
-- **Start Date:** 13/02/2025 @ 03:15 AM  
-- **End Date:** *TBD*  
+- **Start Date:** 13/03/2025 @ 03:15 AM  
+- **End Date:** 14/03/2025 @ 4:50 PM  
 ⏳ Expected duration: **48 hours**
 
 ---
