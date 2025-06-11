@@ -2,8 +2,8 @@
 
 **A Personal LinkTree Replica – But Better!**
 
-## 🌟 Live Demo
-[Check it out here!](https://kinshukpandala.github.io/LinkHub/)
+## 🌟 Click the Link to check it out live !!!
+[https://kinshukpandala.github.io/LinkHub/](https://kinshukpandala.github.io/LinkHub/)
 
 ## 📌 About  
 **LinkHub** is my custom-built alternative to Linktree. After Linktree introduced some changes that affected the user experience when people clicked on my links (see the screenshot below), I decided to take control and build my own version—cleaner, faster, and entirely *mine* though which you can perfectly share all your important links in one place with style.
