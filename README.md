@@ -32,16 +32,6 @@ I'm planning to:
 
 ---
 
-## 🗓️ Project Timeline  
-- **Start Date:** 13/03/2025 @ 03:15 AM  
-- **End Date:** 14/03/2025 @ 4:50 PM  
-⏳ Expected duration: **48 hours**
-
----
-
 ## 🙌 Stay Tuned!  
 I'll be updating this project as I go, so keep an eye out for new features and improvements.
 
----
-
-If you have any suggestions or feedback, feel free to drop me a message!
